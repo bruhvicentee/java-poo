@@ -14,7 +14,7 @@ public class Livro {
     Autor autor;
 
 
-    public String info () {
+    public String info() {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         String texto = """

@@ -1,9 +1,13 @@
 package biblioteca.example;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
 
 public class App {
     public static void main (String[] args) {
+
+        List<Livro> livros = new ArrayList<>();
 
         Livro narnia = new Livro();
 
@@ -14,7 +18,6 @@ public class App {
         narnia.capaDura = true;
         narnia.preco = 139.90f;
 
-
         Autor lewis = new Autor();
 
         lewis.nome = "Clive Staples Lewis";
@@ -23,7 +26,7 @@ public class App {
 
         narnia.autor = lewis;
 
-
+        livros.add(narnia);
         System.out.println( narnia.info() );
     }
 }
